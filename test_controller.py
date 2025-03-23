@@ -13,10 +13,10 @@ class TestProfessionalAPI(unittest.TestCase):
         
         # Dados de teste para um novo profissional
         self.test_professional = {
-            "name": "Teste Automatizado",
-            "email": "teste@automatizado.com",
-            "cellphone": "11999998888",
-            "number": "123"
+            "name": "Tainá Cortez",
+            "email": "corteztaina23@gmail.com",
+            "cellphone": "12996855262",
+            "number": "12121212"
         }
     
     def test_create_professional(self):

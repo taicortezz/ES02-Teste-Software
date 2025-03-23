@@ -2,10 +2,14 @@
 
 Este repositório contém um teste automatizado para o endpoint de criação de profissionais da API Cloudify.
 
+## Teste realizado por: 
+Tainá de Paiva Cortez
+G02 - Projeto Cloudify - Engenharia de Software
+
 ## Caso de Teste: Criação de Profissional
 
 ### Objetivo
-Verificar se o endpoint de criação de profissionais está funcionando corretamente, aceitando os parâmetros necessários e retornando os dados do profissional criado com status code 201.
+Verificar se o endpoint de criação de profissionais está funcionando corretamente, aceitando os parâmetros e retornando os dados do profissional quando criado.
 
 ### Pré-condição
 - A API deve estar em execução na URL configurada
@@ -24,8 +28,18 @@ Verificar se o endpoint de criação de profissionais está funcionando corretam
 - Todos os campos enviados na requisição devem estar presentes na resposta com os mesmos valores
 
 ### Resultado Obtido
-*Será documentado após a execução do teste*
+- Status code: 201 (Created)
+- Resposta: JSON contendo os dados do profissional criado, incluindo:
+  ```json
+  {
+    "id": 6,
+    "name": "Tainá Cortez",
+    "email": "corteztaina23@gmail.com",
+    "cellphone": "12996855262",
+    "number": "121212"
+  }
 
+- Logs: O sistema registrou no console a mensagem "Profissional criado com sucesso" seguida dos detalhes do profissional.
 ### Pós-condição
 Um novo registro de profissional é criado no banco de dados com os dados fornecidos.
 
@@ -33,3 +47,6 @@ Um novo registro de profissional é criado no banco de dados com os dados fornec
 
 1. Certifique-se de que a API está em execução
 2. Instale as dependências:
+- pip install -r requirements.txt
+3. Execute o teste:
+- python test_professional_api.py
