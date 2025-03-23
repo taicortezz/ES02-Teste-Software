@@ -3,8 +3,10 @@
 Este repositório contém um teste automatizado para o endpoint de criação de profissionais da API Cloudify.
 
 ## Teste realizado por: 
-Tainá de Paiva Cortez
-G02 - Projeto Cloudify - Engenharia de Software
+Tainá de Paiva Cortez 
+
+## Teste relacionado ao projeto:
+Cloudify - G02 - Engenharia de Software
 
 ## Caso de Teste: Criação de Profissional
 
